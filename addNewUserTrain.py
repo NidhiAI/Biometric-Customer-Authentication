@@ -7,6 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1nD6vZ07aF6BfmYGgXpThRvIiy3_MRwwr
 """
 
+import os
 import sys
 import _pickle as cPickle
 import numpy as np
@@ -33,7 +34,8 @@ dest   = (os.path.join(base_path,"speakerTrainedModelsGMM/"))
 #training data files names and folders  
 #train_file = "/content/Speaker-Recognition-GMM/trainingDataPath.txt"
 #train_file = "/content/Speaker-Recognition-GMM/addUserData/Nidhi_Agarwal/addUserTrain.txt"
-train_file   = (os.path.join(source,newUser,"/addUserTrain.txt"))
+train_file_1 = (os.path.join(source,'Nidhi_Agarwal_0010/'))
+train_file   = (os.path.join(train_file_1,"addUserTrain.txt"))
 file_paths = open(train_file,'r')
 
 count = 1
