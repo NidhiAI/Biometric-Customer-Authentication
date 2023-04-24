@@ -43,10 +43,13 @@ speakers   = [fname.split("/")[-1].split(".gmm")[0] for fname
 error = 0
 total_sample = 0.0
 
-print("Press '1' for checking a single Audio or Press '0' for testing a complete set of audio with Accuracy?")
+print(" Start with Testing ")
+#print("Press '1' for testing a single Audio or Press '0' for testing complete set of audio with Accuracy?")
+print("\nPress '1' for testing single Audio or Press '0' for testing full list of audios ?")
 take=int(input().strip())
 if take == 1:
-    print ("Enter the File name from the sample with .wav notation :")
+    #print ("Enter the File name from the sample with .wav notation :")
+    print ("\nEnter the File name along with extention ".wav" you want to test from the samples :")
     path =input().strip()
     print (("Testing Audio : ",path))
     sr,audio = read(source + path)
@@ -60,7 +63,8 @@ if take == 1:
         log_likelihood[i] = scores.sum()
     
     winner = np.argmax(log_likelihood)
-    print ("\tThe person in the given audio sample is detected as - ", speakers[winner])
+    #print ("\tThe person in the given audio sample is detected as - ", speakers[winner])
+    print ("\nThe person in the given audio sample is detected as : ", speakers[winner])
 
     time.sleep(1.0)
 elif take == 0:
