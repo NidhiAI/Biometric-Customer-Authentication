@@ -57,7 +57,8 @@ for path in file_paths:
         #picklefile = path.split("_")[0]+".gmm"
         picklefile = path.split("/")[0]+".gmm"
         cPickle.dump(gmm,open(dest + picklefile,'wb'))
-        print ('+ modeling completed for speaker:',picklefile," with data point = ",features.shape)   
+        #print ('+ modeling completed for speaker:',picklefile," with data point = ",features.shape)  
+	print ('+ Training (GMM modeling) completed for speaker:',picklefile)#," with total features data point = ",features.shape) #24-Apr-2023
         features = np.asarray(())
         count = 0
     count = count + 1
