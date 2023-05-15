@@ -21,10 +21,10 @@ from sklearn.model_selection import train_test_split
 
 
 from sklearn.preprocessing import LabelEncoder, StandardScaler
-import tensorflow as tf
-from tensorflow import keras
+#import tensorflow as tf
+#from tensorflow import keras
 
-from keras import layers
+#from keras import layers
 
 #from sklearn.preprocessing import LabelEncoder#, StandardScalerimport keras
 #from keras.models import Sequentialimport #, warnings
