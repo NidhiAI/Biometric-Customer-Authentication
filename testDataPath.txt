@@ -38,3 +38,10 @@ HindiTVIndia_0012-11.wav
 FactsBeats90_0013-11.wav
 ShivamMalik09_0014-11.wav
 TrakinShorts_0015-11.wav
+ArRahman_Tamil-11.wav
+Fastrewind_Tamil-11.wav
+Kajal_Punjabi-11.wav
+Peesapunjabi_Punjabi-11.wav
+Rahhuraj_Gujrati-11.wav
+TusharGolmal_UnableSpeak-11.wav
+Vijayvoicecover2_Tamil-11.wav
